@@ -1,0 +1,52 @@
+{
+  "name": "naughty-or-nice-predictor",
+  "description": "Naughty or Nice: The Fabric Best Practices Predictor. A festive Microsoft Fabric App quiz that scores your Fabric best-practice instincts, with a seasonal Top 10 Nice / Top 10 Naughty scoreboard.",
+  "license": "MIT",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "template": {
+    "name": "universal-app",
+    "displayName": "✨ Use default template",
+    "hidden": true
+  },
+  "scripts": {
+    "dev": "rayfin dev",
+    "dev:frontend": "npm run -w @rayfin-app/frontend dev",
+    "build": "npm run -w @rayfin-app/data build && npm run -w @rayfin-app/frontend build",
+    "build:fabric": "npm run -w @rayfin-app/data build && npm run -w @rayfin-app/frontend build:fabric",
+    "lint": "npm run -w @rayfin-app/frontend lint",
+    "preview": "npm run -w @rayfin-app/frontend preview",
+    "test": "npm run -w @rayfin-app/frontend test",
+    "test:watch": "npm run -w @rayfin-app/frontend test:watch",
+    "typecheck": "tsc -b",
+    "pack:add": "node scripts/scaffold.mjs",
+    "test:template": "node scripts/run-template-tests.mjs",
+    "rayfin:up": "rayfin up",
+    "seed:scenarios": "tsx scripts/seed-scenarios.ts",
+    "seed:scenarios:check": "tsx scripts/seed-scenarios.ts --check",
+    "seed:demo": "tsx scripts/seed-demo-attempts.ts",
+    "seed:demo:check": "tsx scripts/seed-demo-attempts.ts --check",
+    "content:publish": "tsx scripts/publish-scenarios.ts",
+    "seed:scenarios:plan": "tsx scripts/seed-scenarios.ts --plan"
+  },
+  "devDependencies": {
+    "@microsoft/rayfin-cli": "^1.36.0-alpha",
+    "@microsoft/rayfin-guide": "^1.36.0-alpha",
+    "typescript": "~5.7.2",
+    "tsx": "^4.23.15",
+    "dotenv": "^16.6.1",
+    "@types/node": "^20.4.2"
+  },
+  "rayfinScriptBases": {
+    "build": "npm run -w @rayfin-app/data build && npm run -w @rayfin-app/frontend build",
+    "build:fabric": "npm run -w @rayfin-app/data build && npm run -w @rayfin-app/frontend build:fabric",
+    "typecheck": "tsc -b"
+  },
+  "rayfinPacks": [
+    "data-modeling"
+  ]
+}

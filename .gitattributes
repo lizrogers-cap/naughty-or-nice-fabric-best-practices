@@ -1,0 +1,8 @@
+# `rayfin up` writes this deployment's hosting origin (*.fabricapps.net) into
+# rayfin.yml's allowedRedirectUris on every deploy. It is needed locally but is a
+# deployment-specific identifier, so the clean filter strips it from commits.
+# Set the filter up once per clone (see README, "Publishing this repo"):
+#   git config filter.strip-hosting-origin.clean "sed -e '/\.fabricapps\.net/d'"
+#   git config filter.strip-hosting-origin.smudge cat
+#   git config filter.strip-hosting-origin.required true
+rayfin/rayfin.yml filter=strip-hosting-origin

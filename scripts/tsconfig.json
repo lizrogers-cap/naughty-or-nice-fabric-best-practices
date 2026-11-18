@@ -1,0 +1,28 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "..",
+    "outDir": "./.tsbuild",
+    "lib": [
+      "ES2022"
+    ],
+    "types": [
+      "node"
+    ],
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "tsBuildInfoFile": "./.tsbuild/.tsbuildinfo"
+  },
+  "include": [
+    "seed-scenarios.ts",
+    "seed-demo-attempts.ts",
+    "publish-scenarios.ts",
+    "lib/**/*.ts",
+    "../content/**/*.ts"
+  ],
+  "references": [
+    {
+      "path": "../packages/shared"
+    }
+  ]
+}
