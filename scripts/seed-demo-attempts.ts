@@ -28,6 +28,18 @@ const DEMO_PLAYERS: ReadonlyArray<{ playerName: string; fraction: number; daysAg
   { playerName: 'Jingle Sprocketwhistle', fraction: 0.23, daysAgo: 2 },
   { playerName: 'Sprinkles O\'Frost', fraction: 0.15, daysAgo: 2 },
   { playerName: 'Krampus Jr.', fraction: 0.0, daysAgo: 1 },
+  // Second wave: 4 more apprentices (60+) and 6 more coal (50 and below), so the
+  // 10 highest and 10 lowest scores are different players with no tie at the cut.
+  { playerName: 'Nutmeg Bitflicker', fraction: 0.69, daysAgo: 6 },
+  { playerName: 'Ginger Snapshot', fraction: 0.54, daysAgo: 5 },
+  { playerName: 'Clove Querysmith', fraction: 0.54, daysAgo: 4 },
+  { playerName: 'Bramble Tinselbyte', fraction: 0.46, daysAgo: 3 },
+  { playerName: 'Tumble Mistletoad', fraction: 0.31, daysAgo: 6 },
+  { playerName: 'Wobble Fruitcake', fraction: 0.31, daysAgo: 4 },
+  { playerName: 'Soggy Mittenworth', fraction: 0.23, daysAgo: 3 },
+  { playerName: 'Grumble Coalbucket', fraction: 0.08, daysAgo: 2 },
+  { playerName: 'Slushy McSnowdrift', fraction: 0.08, daysAgo: 1 },
+  { playerName: 'Nibbles Stockingstuff', fraction: 0.0, daysAgo: 1 },
 ];
 
 function buildRows(now = new Date()) {
