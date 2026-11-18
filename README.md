@@ -23,8 +23,14 @@ _An entry for 12 Days of Fabric Apps, Day 9._
 - **One scenario at a time.** A string-light countdown ("5 sleeps until
   Christmas") shows progress. Every answer gets immediate feedback and the
   explanation before you move on.
+  
+<img width="1140" height="650" alt="Screenshot 2026-11-18 144256" src="https://github.com/user-attachments/assets/5dd021bf-e5eb-4589-af26-12f1a30225cb" />
+
 - **Scoring.** A correct answer earns the scenario's `pointValue`; a wrong
   answer earns 0. The final percentage maps to one of four verdicts:
+<img width="1144" height="944" alt="Screenshot 2026-11-18 144127" src="https://github.com/user-attachments/assets/a5f03e9a-f81a-430a-a072-df7de6c8b0fa" />
+<img width="1166" height="870" alt="Screenshot 2026-11-18 144139" src="https://github.com/user-attachments/assets/8bb24e12-2499-4d0a-96c8-cb69983310e6" />
+
 
   | Score | Verdict |
   | --- | --- |
@@ -37,6 +43,7 @@ _An entry for 12 Days of Fabric Apps, Day 9._
   an honor-roll Nice List (highest scores) and a roast-style Naughty List
   (lowest scores). Ties go to whoever finished first. Your own rows are
   highlighted.
+  <img width="1235" height="1267" alt="Screenshot 2026-11-18 144011" src="https://github.com/user-attachments/assets/f5c2236e-da00-41e2-9478-01eda6607c34" />
 - **Content lives in data, not code.** The frontend reads scenarios from the
   `Scenario` entity, so you can edit content and reseed without redeploying the
   app.
