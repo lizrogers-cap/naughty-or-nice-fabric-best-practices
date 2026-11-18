@@ -7,6 +7,9 @@ practice behind the answer. At the end you get a verdict, from **Lump of Coal**
 to **North Pole Certified**, and a place on the seasonal **Top 10 Nice / Top 10
 Naughty** scoreboard.
 
+<img width="1141" height="587" alt="Screenshot 2026-11-18 144803" src="https://github.com/user-attachments/assets/81959b86-3739-4946-b30e-08a247571e7f" />
+
+
 _An entry for 12 Days of Fabric Apps, Day 9._
 
 ## What's inside
